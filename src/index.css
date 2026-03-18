@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+    --font-roboto: "Roboto", sans-serif;
+}
+
+:root {
+    --body-gradient: radial-gradient(
+        circle at 0% -10%,
+        #0e304b,
+        #051b2c,
+        #010d16
+    );
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bounce {
+    animation: Bounce 0.5s ease-in forwards;
+    transform-origin: top center;
+}
+
+.bg-app-radial {
+    background-image: var(--body-gradient);
+}
+
+@keyframes Bounce {
+    from {
+        transform: scaleY(1.1);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
