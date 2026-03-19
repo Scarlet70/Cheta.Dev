@@ -184,27 +184,47 @@ function App() {
                 <nav className="mt-6">
                     <ul className="flex gap-4 lg:gap-6 text-2xl text-blue-200">
                         <li>
-                            <a href="">
+                            <a
+                                href="https://www.linkedin.com/in/nwafor-emmanuel-458a2b249/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <FaLinkedin />
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a
+                                href="https://github.com/Scarlet70"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <FaGithub />
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a
+                                href="https://www.instagram.com/nwaforchetachukwu/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <FaInstagram />
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a
+                                href="https://codepen.io/Emilax"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <FaCodepen />
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a
+                                href="mailto:chetanwafor25@gmail.com?subject=Project%20Request&body=Hi%20Cheta,%20I%20would%20like%20to%20work%20with%20you."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <FaEnvelope />
                             </a>
                         </li>
@@ -378,27 +398,47 @@ function App() {
                     <nav className="py-4">
                         <ul className="flex gap-6 text-2xl text-blue-200">
                             <li>
-                                <a href="">
+                                <a
+                                    href="https://www.linkedin.com/in/nwafor-emmanuel-458a2b249/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <FaLinkedin />
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a
+                                    href="https://github.com/Scarlet70"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <FaGithub />
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a
+                                    href="https://www.instagram.com/nwaforchetachukwu/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <FaInstagram />
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a
+                                    href="https://codepen.io/Emilax"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <FaCodepen />
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a
+                                    href="mailto:chetanwafor25@gmail.com?subject=Project%20Request&body=Hi%20Cheta,%20I%20would%20like%20to%20work%20with%20you."
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <FaEnvelope />
                                 </a>
                             </li>
