@@ -44,8 +44,16 @@ function App() {
                 <nav className="lg:visible invisible p-2">
                     <ul className="flex gap-16 justify-end items-center text-slate-500 px-8 py-4 z-0">
                         <li>
-                            <button className="border-2 border-cyan-600 rounded-md px-4 min-h-10 font-semibold text-nowrap text-sm text-cyan-400 shadow-[0px_0px_10px_0px] shadow-cyan-600 hover:bg-cyan-500 hover:text-cyan-950 transition-all duration-200">
-                                Download CV
+                            <button className="border-2 border-cyan-600 rounded-md font-semibold text-nowrap text-sm text-cyan-400 shadow-[0px_0px_10px_0px] shadow-cyan-600 hover:bg-cyan-500 hover:text-cyan-950 transition-all duration-200">
+                                <a
+                                    className="flex justify-center items-center w-full h-full px-4 min-h-10"
+                                    href="/Nwafor-Emmanuel-CV.pdf"
+                                    target="_blank"
+                                    download
+                                    rel="noopener noreferrer"
+                                >
+                                    Download CV
+                                </a>
                             </button>
                         </li>
                         <li className="text-md hover:text-slate-200 transition-all duration-200">
@@ -63,8 +71,16 @@ function App() {
                     </ul>
                 </nav>
                 <div className="flex justify-betweeen items-center gap-10 lg:hidden py-4">
-                    <button className="border-2 border-cyan-600 rounded-md px-4 min-h-10 font-semibold text-nowrap text-sm text-cyan-400 shadow-[0px_0px_10px_0px] shadow-cyan-600 hover:bg-cyan-500 hover:text-cyan-950 transition-all duration-200">
-                        Download CV
+                    <button className="border-2 border-cyan-600 rounded-md font-semibold text-nowrap text-sm text-cyan-400 shadow-[0px_0px_10px_0px] shadow-cyan-600 hover:bg-cyan-500 hover:text-cyan-950 transition-all duration-200">
+                        <a
+                            className="flex justify-center items-center w-full h-full px-4 min-h-10"
+                            href="/Nwafor-Emmanuel-CV.pdf"
+                            target="_blank"
+                            download
+                            rel="noopener noreferrer"
+                        >
+                            Download CV
+                        </a>
                     </button>
                     <button
                         className="mr-6 h-10"
@@ -239,7 +255,7 @@ function App() {
                 </article>
             </section>
             <hr className="mx-8 border-slate-800" />
-            <article className="flex flex-col gap-36 lg:flex-row lg:flex-nowrap lg:justify-between p-10">
+            <article className="flex flex-col gap-36 lg:flex-row lg:flex-nowrap lg:justify-between p-5">
                 <section
                     className="w-full h-full lg:w-[calc(60%-1rem)]"
                     id="projects"
@@ -298,10 +314,10 @@ function App() {
                         <SearchCode className="w-9 h-9" />
                         TOOLS I WORK WITH
                     </h3>
-                    <article className="grid grid-cols-4 gap-y-4 sm:gap-x-30 gap-x-15 mt-6 p-10 justify-items-center">
+                    <article className="grid grid-cols-4 gap-y-6 sm:gap-x-20 gap-x-18 mt-6 p-10 justify-items-center">
                         {techStack.map((tool, i) => (
                             <div
-                                className={`flex flex-col justify-center gap-1 items-center sm:w-23 sm:h-23 w-20 h-20 rounded-sm bg-slate-900 hover:bg-(--hover-bg) hover:[&>svg]:fill-(--icon-color) hover:[&>p]:text-(--icon-color) transition-all duration-300`}
+                                className={`flex flex-col justify-center gap-1 items-center sm:w-21 sm:h-21 w-18 h-18 rounded-sm bg-slate-900 hover:bg-(--hover-bg) hover:[&>svg]:fill-(--icon-color) hover:[&>p]:text-(--icon-color) focus:bg-(--hover-bg) focus:[&>svg]:fill-(--icon-color) focus:[&>p]:text-(--icon-color) transition-all duration-300`}
                                 key={i}
                                 style={{
                                     "--hover-bg": tool.svgBgColor,
@@ -312,11 +328,11 @@ function App() {
                                     xmlns="http://www.w3.0rg/2000/svg"
                                     viewBox="0 0 24 24"
                                     fill="currentColor"
-                                    className={`sm:w-12 sm:h-12 w-11 h-11 text-slate-500 transition-all duration-300`}
+                                    className={`sm:w-11 sm:h-11 w-10 h-10 text-slate-500 transition-all duration-300`}
                                 >
                                     <path d={tool.svgPath} />
                                 </svg>
-                                <p className="text-slate-500 sm:text-md text-sm text-center font-bold transition-all duration-300">
+                                <p className="text-slate-500 sm:text-md text-[0.7rem] text-center font-bold transition-all duration-300">
                                     {tool.name}
                                 </p>
                             </div>
