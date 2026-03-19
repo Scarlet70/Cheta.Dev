@@ -27,13 +27,13 @@ function App() {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
     const { projects, techStack } = useDataContext();
 
-    useEffect(() => {
+    /* useEffect(() => {
         document.body.style.overflow = isOpenMenu ? "hidden" : "auto";
 
         return () => {
             document.body.style.overflow = "auto";
         };
-    }, [isOpenMenu]);
+    }, [isOpenMenu]); */
 
     return (
         <section
@@ -91,7 +91,7 @@ function App() {
                 </div>
 
                 {isOpenMenu && (
-                    <nav className="flex flex-col min-h-screen absolute top-0 left-0 bg-slate-800 w-full z-10">
+                    <nav className="flex flex-col min-h-screen fixed top-0 left-0 bg-slate-800 w-full z-10 bounce">
                         <div className="flex justify-between items-end p-8">
                             <p className="text-2xl text-slate-200 font-semibold">
                                 CHETA{" "}
@@ -101,23 +101,46 @@ function App() {
                                 <XIcon className="w-9 h-9 text-slate-300" />
                             </button>
                         </div>
-                        <span className="absolute top-[36%] right-[24%] text-slate-900 opacity-20 z-0">
+                        <span className="w-full flex justify-center text-slate-900 absolute my-46 mx-auto opacity-20 z-0">
                             <Braces className="w-80 h-80" />
                         </span>
-                        <ul className="flex flex-col my-52 mx-auto text-slate-400 text-2xl text-center w-[80%] z-1">
+                        <ul className="flex flex-col my-25 mx-auto text-slate-400 text-2xl text-center w-[80%] z-2">
                             <li className="py-4 border-b-2 border-solid border-slate-700 font-semibold hover:text-slate-200 hover:border-slate-200 transition-all duration-200">
-                                <a href="#home">HOME</a>
+                                <a
+                                    href="#home"
+                                    className="block w-full"
+                                >
+                                    HOME
+                                </a>
                             </li>
                             <li className="py-4 border-b-2 border-solid border-slate-700 font-semibold hover:text-slate-200 hover:border-slate-200 transition-all duration-200">
-                                <a href="#about">ABOUT</a>
+                                <a
+                                    href="#about"
+                                    className="block w-full"
+                                >
+                                    ABOUT
+                                </a>
                             </li>
                             <li className="py-4 border-b-2 border-solid border-slate-700 font-semibold hover:text-slate-200 hover:border-slate-200 transition-all duration-200">
-                                <a href="#projects">PROJECTS</a>
+                                <a
+                                    href="#projects"
+                                    className="block w-full"
+                                >
+                                    PROJECTS
+                                </a>
                             </li>
                             <li className="py-4 border-b-2 border-solid border-slate-700 font-semibold hover:text-slate-200 hover:border-slate-200 transition-all duration-200">
-                                <a href="contacts">CONTACT</a>
+                                <a
+                                    href="#contact"
+                                    className="block w-full"
+                                >
+                                    CONTACT
+                                </a>
                             </li>
                         </ul>
+                        <p className="text-slate-500 text-center mt-8">
+                            Cheta.dev2026
+                        </p>
                     </nav>
                 )}
             </header>
@@ -141,8 +164,8 @@ function App() {
                     id="intro-message"
                     className="text-blue-200 lg:text-xl text-lg mb-6 z-1"
                 >
-                    I create web solutions that combine design, <br />{" "}
-                    usability, and performance.
+                    I create web solutions that combine <br />
+                    design, usability, and performance.
                 </p>
                 <ul className="flex flex-col gap-2 p-2 text-slate-300 font-semibold">
                     <li className="z-1">
