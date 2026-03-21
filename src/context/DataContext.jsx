@@ -16,6 +16,8 @@ export const DataProvider = ({ children }) => {
             skills: ["HTML", "CSS", "JavaScript"],
             imgSrc: timely,
             imgAlt: "timelyapp",
+            liveDemo: "medication-reminder-app-nine.vercel.app",
+            githubRepo: "https://github.com/Scarlet70/MedicationReminderApp",
         },
         {
             id: 2,
@@ -25,15 +27,20 @@ export const DataProvider = ({ children }) => {
             skills: ["React", "CSS", "Vite"],
             imgSrc: etransit,
             imgAlt: "etransitapp",
+            liveDemo: "dispatch-delivery-website.vercel.app",
+            githubRepo:
+                "https://github.com/Scarlet70/Dispatch-Delivery-Website",
         },
         {
             id: 3,
             name: "Pillify Task Manager",
             description:
                 "Pillify is a task management platform (fully frontend), that was designed help pharmacists and other health facilities to efffectively manage and delegate tasks, with features like interactive dashboard and notification alerts to keep track of all the tasks, projects and users",
-            skills: ["React", "CSS", "Context API", "React-Router", "Vite"],
+            skills: ["React", "Context API", "React-Router"],
             imgSrc: pillify,
             imgAlt: "pillifyapp",
+            liveDemo: "pillify-task-manager.vercel.app",
+            githubRepo: "https://github.com/Scarlet70/Pillify-task-manager",
         },
         {
             id: 4,
@@ -43,6 +50,8 @@ export const DataProvider = ({ children }) => {
             skills: ["HTML", "CSS"],
             imgSrc: Chetagram,
             imgAlt: "chetagram",
+            liveDemo: "",
+            githubRepo: "",
         },
     ];
 

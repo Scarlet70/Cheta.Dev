@@ -408,10 +408,13 @@ function App() {
                                     <span className="w-full h-full "></span>
                                 </div>
                                 <div className="lg:w-4/6">
-                                    <h4 className="flex items-center gap-2 text-md text-slate-300 font-medium hover:text-blue-500 transition-all duration-200">
+                                    <a
+                                        href={`https://${item.liveDemo}`}
+                                        className="flex items-center gap-2 text-md text-slate-300 font-medium hover:text-blue-500 transition-all duration-200"
+                                    >
                                         {item.name}{" "}
                                         <SquareArrowOutUpRight className="w-5 h-5" />
-                                    </h4>
+                                    </a>
                                     <p className="p-2 text-slate-400 text-sm md:text-md">
                                         {item.description}
                                     </p>
@@ -424,6 +427,13 @@ function App() {
                                                 {skill}
                                             </li>
                                         ))}
+                                        <a
+                                            href={item.githubRepo}
+                                            className="flex gap-1 items-center text-slate-200 text-[0.8rem] ml-3"
+                                        >
+                                            View GitHub Repo{" "}
+                                            <SquareArrowOutUpRight className="w-4 h-4" />
+                                        </a>
                                     </ul>
                                 </div>
                             </article>
