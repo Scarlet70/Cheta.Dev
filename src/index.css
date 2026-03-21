@@ -26,6 +26,25 @@ html {
     background-image: var(--body-gradient);
 }
 
+#hero-links li span {
+    transition: all 0.3s ease;
+}
+
+#hero-links li:hover span {
+    width: 50px;
+    transition: all 0.3s ease;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px) rotateY(-10deg);
+    }
+    50% {
+        transform: translateY(-10px) rotateY(-10deg);
+    }
+}
+
 @keyframes Bounce {
     0% {
         transform: scaleY(0);
