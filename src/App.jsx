@@ -79,7 +79,7 @@ function App() {
                             <button className="border-2 border-cyan-600 rounded-md font-semibold text-nowrap text-sm text-cyan-400 shadow-[0px_0px_10px_0px] shadow-cyan-600 hover:bg-cyan-500 hover:text-cyan-950 transition-all duration-200">
                                 <a
                                     className="flex justify-center items-center w-full h-full px-4 min-h-10"
-                                    href="/Nwafor-Emmanuel-CV.pdf"
+                                    href="https://docs.google.com/document/d/1KH7z3VSs-zr389Gnz9t7aLbvErArmQztWqDkonyuu6I/edit?usp=drivesdk"
                                     target="_blank"
                                     download
                                     rel="noopener noreferrer"
@@ -111,7 +111,7 @@ function App() {
                             download
                             rel="noopener noreferrer"
                         >
-                            Download CV
+                            View Resume
                         </a>
                     </button>
                     <button
@@ -421,7 +421,7 @@ function App() {
                                     <ul className="flex gap-2">
                                         {item.skills.map((skill, i) => (
                                             <li
-                                                className="bg-emerald-950 px-2 py-px text-emerald-400 rounded-xl sm:text-[0.7rem] text-[0.5rem]"
+                                                className="flex items-center bg-emerald-950 px-1 py-px text-emerald-400 rounded-xl sm:text-[0.7rem] text-[0.5rem]"
                                                 key={i}
                                             >
                                                 {skill}
@@ -429,7 +429,7 @@ function App() {
                                         ))}
                                         <a
                                             href={item.githubRepo}
-                                            className="flex gap-1 items-center text-slate-200 text-[0.8rem] ml-3"
+                                            className="flex gap-1 items-center text-slate-200 text-[0.7rem] sm:text-[0.8rem] ml-3 hover:underline"
                                         >
                                             View GitHub Repo{" "}
                                             <SquareArrowOutUpRight className="w-4 h-4" />
@@ -439,14 +439,6 @@ function App() {
                             </article>
                         ))}
                     </div>
-                    <p className="text-md text-slate-300 font-semibold">
-                        <a
-                            href=""
-                            className="flex gap-1 items-center "
-                        >
-                            View Projects Archive <SquareArrowOutUpRight />
-                        </a>
-                    </p>
                 </section>
                 <section className="w-full h-full lg:w-[calc(40%-1rem)]">
                     <h3 className="flex justify-center items-center gap-2 text-2xl font-medium text-slate-300 mb-6">
@@ -543,12 +535,12 @@ function App() {
                     <button className="border-2 border-cyan-600 rounded-md font-semibold text-nowrap text-sm text-cyan-400 shadow-[0px_0px_10px_0px] shadow-cyan-600 hover:bg-cyan-500 hover:text-cyan-950 transition-all duration-200">
                         <a
                             className="flex justify-center items-center w-full h-full px-4 min-h-10"
-                            href="/Nwafor-Emmanuel-CV.pdf"
+                            href="https://docs.google.com/document/d/1KH7z3VSs-zr389Gnz9t7aLbvErArmQztWqDkonyuu6I/edit?usp=drivesdk"
                             target="_blank"
                             download
                             rel="noopener noreferrer"
                         >
-                            Download CV
+                            View Resume
                         </a>
                     </button>
                 </div>
