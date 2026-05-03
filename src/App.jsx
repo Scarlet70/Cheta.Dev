@@ -421,7 +421,7 @@ function App() {
                                     <ul className="flex gap-2">
                                         {item.skills.map((skill, i) => (
                                             <li
-                                                className="bg-emerald-950 px-2 py-px text-emerald-400 rounded-xl text-[0.7rem]"
+                                                className="bg-emerald-950 px-2 py-px text-emerald-400 rounded-xl sm:text-[0.7rem] text-[0.5rem]"
                                                 key={i}
                                             >
                                                 {skill}
