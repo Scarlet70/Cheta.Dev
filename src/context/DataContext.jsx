@@ -3,6 +3,7 @@ import timely from "../assets/timelypic.png";
 import Chetagram from "../assets/Chetagram.png";
 import etransit from "../assets/etransit.png";
 import pillify from "../assets/pillifypic.png";
+import invoice from "../assets/invoice2.png";
 
 const DataContext = createContext({});
 
@@ -44,14 +45,14 @@ export const DataProvider = ({ children }) => {
         },
         {
             id: 4,
-            name: "Chetagram Sign-in",
+            name: "Invoice Generator",
             description:
-                "This was developed as a part of my capstone project while i was solidifying my css fundamentals, as a clone of the official instagram desktop login page",
-            skills: ["HTML", "CSS"],
-            imgSrc: Chetagram,
-            imgAlt: "chetagram",
-            liveDemo: "",
-            githubRepo: "",
+                "A Web application that helps users to keep track of payment invoices for clients, with features like filtering by status, dark theme toggle, editing and deleting invoices, saving as draft etc.",
+            skills: ["React", "TailwindCSS", "Context API"],
+            imgSrc: invoice,
+            imgAlt: "invoice app",
+            liveDemo: "stage2task-zeta.vercel.app",
+            githubRepo: "https://github.com/Scarlet70/Stage2task",
         },
     ];
 
