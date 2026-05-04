@@ -106,7 +106,7 @@ function App() {
                     <button className="border-2 border-cyan-600 rounded-md font-semibold text-nowrap text-sm text-cyan-400 shadow-[0px_0px_10px_0px] shadow-cyan-600 hover:bg-cyan-500 hover:text-cyan-950 transition-all duration-200">
                         <a
                             className="flex justify-center items-center w-full h-full px-4 min-h-10"
-                            href="/Nwafor-Emmanuel-CV.pdf"
+                            href="https://docs.google.com/document/d/1KH7z3VSs-zr389Gnz9t7aLbvErArmQztWqDkonyuu6I/edit?usp=drivesdk"
                             target="_blank"
                             download
                             rel="noopener noreferrer"
